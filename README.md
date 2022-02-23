@@ -1,18 +1,19 @@
 # Plant-Nanny
-Water is essential for life, but watering a plant is also one of the easiest things to neglect. This website can offer you information about various kinds of plants and remind you of the day to water them or fertilize them. Every day you can take care of your little plants refering to this website!
+Despite the name, the idea for this is to create an application to remind you of activities. 
 
 # TODO
 - design a UI page
 - create a database related to the plants 
-- implement API 
+- implement API  
+- add wireframe
 
 # Built with
 - Java 
 
-# Scrum master
+# Scrum master: TBD
 
 # Contributers
-Sea-Shore-Sahil, Xuewei-Chen: https://github.com/Xuewei-Chen, Joshua Kennerly, Will Ramsey
+Sea-Shore-Sahil, Xuewei-Chen: https://github.com/Xuewei-Chen, Josh Kennerly: https://github.com/jdkenne, Will Ramsey
 
 
 

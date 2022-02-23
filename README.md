@@ -1,5 +1,5 @@
 # Plant-Nanny
-Despite the name, the idea for this is to create an application to remind of you of activities. 
+Despite the name, the idea for this is to create an application to remind you of activities. 
 
 # TODO
 - design a UI page

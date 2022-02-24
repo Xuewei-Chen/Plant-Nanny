@@ -1,5 +1,5 @@
 # Plant-Nanny
-Despite the name, the idea for this is to create an application to remind you of activities. 
+Plant Nanny is a reminder app to take care of your plants. You can create sets of reminder for each plant you have. You can share your routine and also look for other user's routine.
 
 # TODO
 - design a UI page
@@ -8,12 +8,13 @@ Despite the name, the idea for this is to create an application to remind you of
 - add wireframe
 
 # Built with
-- Java 
+- Java
+- Best Buy API
 
 # Scrum master: TBD
 
 # Contributers
-Sea-Shore-Sahil, Xuewei-Chen: https://github.com/Xuewei-Chen, Josh Kennerly: https://github.com/jdkenne, Will Ramsey
-
-
-
+Sea-Shore-Sahil: https://github.com/Sea-Shore-Sahil
+Xuewei-Chen: https://github.com/Xuewei-Chen
+Josh Kennerly: https://github.com/jdkenne
+Will Ramsey

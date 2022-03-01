@@ -14,7 +14,7 @@ Plant Nanny is a reminder app to take care of your plants. You can create sets o
 # Scrum master: TBD
 
 # Contributers
-Sea-Shore-Sahil: https://github.com/Sea-Shore-Sahil
-Xuewei-Chen: https://github.com/Xuewei-Chen
-Josh Kennerly: https://github.com/jdkenne
-Will Ramsey
+- Sea-Shore-Sahil: https://github.com/Sea-Shore-Sahil
+- Xuewei-Chen: https://github.com/Xuewei-Chen
+- Josh Kennerly: https://github.com/jdkenne
+- Will Ramsey

@@ -11,7 +11,7 @@ Plant Nanny is a reminder app to take care of your plants. You can create sets o
 - Java
 - Best Buy API
 
-# Scrum master: TBD
+# Scrum master: Will Ramsey
 
 # Contributers
 - Sea-Shore-Sahil: https://github.com/Sea-Shore-Sahil

@@ -5,8 +5,16 @@
       <map>
         <entry key="app/src/main/res/drawable/translucent_button.xml" value="0.2774358974358974" />
         <entry key="app/src/main/res/drawable/translucent_edit.xml" value="0.2784615384615385" />
+        <entry key="app/src/main/res/layout/activity_All.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/activity_add_plant.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/activity_all.xml" value="0.14270833333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/activity_note.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/activity_notes.xml" value="0.12968591691995948" />
+        <entry key="app/src/main/res/layout/activity_repo.xml" value="0.10914855072463768" />
+        <entry key="app/src/main/res/layout/activity_schedule.xml" value="0.13020833333333334" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/activity_today.xml" value="0.1171875" />
       </map>
     </option>
   </component>
@@ -18,5 +26,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22056159420289856" />
+      </ProjectState>
+    </option>
   </component>
 </project>

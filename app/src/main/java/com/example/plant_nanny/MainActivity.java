@@ -33,6 +33,8 @@ public class MainActivity extends Activity {
                         // 判断如果用户名为"123456"密码为"123456"则登录成功
                         if (strUserName.equals("123456") && strPassWord.equals("123456")) {
                             Toast.makeText(MainActivity.this, "Successful！", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
+                            startActivity(intent);
                         } else {
                             Toast.makeText(MainActivity.this, "Please enter the correct username or password！", Toast.LENGTH_SHORT).show();
                         }

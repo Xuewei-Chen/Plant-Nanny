@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".AddPlantActivity" />
+        <activity android:name=".RepoActivity" />
+        <activity android:name=".TodayActivity" />
     </application>
 
 </manifest>

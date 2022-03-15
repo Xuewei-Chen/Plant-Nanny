@@ -9,7 +9,7 @@ Plant Nanny is a reminder app to take care of your plants. You can create sets o
 
 # Built with
 - Java
-- Best Buy API
+- ASP.net core web API (C#)
 
 # Scrum master: Will Ramsey
 

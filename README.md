@@ -7,11 +7,11 @@ Plant Story is a reminder app to take care of your plants. You can create sets o
 - [x] Implement API
 - [ ] Add sample data
 - [ ] Add like counter
-- [ ] Add user login and info
+- [x] Add user login and info
 - [ ] Host on cloud platform
 ### Frontend
 - [x] Wireframe
-- [ ] Prototype
+- [x] Prototype
 - [ ] Connect to API
 
 # Wireframe

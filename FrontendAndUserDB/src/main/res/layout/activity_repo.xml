@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".RepoActivity">
+
+    <!--使用线性布局-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F5F5F5">
+
+        <!--Logo-->
+        <TextView
+                android:id="@+id/RepoText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:text="Repository"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/translucent_button"
+                android:textSize="30dp"/>
+
+
+        <!--嵌套线性布局-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!--嵌套线性布局-->
+            <LinearLayout
+                    android:id="@+id/VarLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <!--watering freq-->
+                <EditText
+                        android:id="@+id/Var1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/translucent_edit"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:text="Rose"
+                        android:textSize="30dp"
+                        android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/VarLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <!--Schedule input-->
+                <!--fertilizing freq-->
+                <EditText
+                        android:id="@+id/Var2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/translucent_edit"
+                        android:textColor="@color/white"
+                        android:text="Daisy"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/VarLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <!--Schedule input-->
+                <!--fertilizing freq-->
+                <EditText
+                        android:id="@+id/Var3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/translucent_edit"
+                        android:textColor="@color/white"
+                        android:text="Orchid"
+                        android:textSize="30dp"
+                        android:gravity="center"
+                        android:singleLine="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ReturnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <!--Return Button-->
+            <Button
+                    android:id="@+id/RepoBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/translucent_button"
+                    android:text="Return"
+                    android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

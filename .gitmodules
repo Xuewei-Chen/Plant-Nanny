@@ -4,3 +4,6 @@
 [submodule "FrontendAndUserDB/Plant-Nanny"]
 	path = FrontendAndUserDB/Plant-Nanny
 	url = https://github.com/Xuewei-Chen/Plant-Nanny
+[submodule "FrontendAndUserDB/--force"]
+	path = FrontendAndUserDB/--force
+	url = https://github.com/Xuewei-Chen/Plant-Nanny

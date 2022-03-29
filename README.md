@@ -5,14 +5,13 @@ Plant Story is a reminder app to take care of your plants. You can create sets o
 ### Backend
 - [x] Create a database related to the plants
 - [x] Implement API
-- [ ] Add sample data
 - [ ] Add like counter
 - [x] Add user login and info
 - [ ] Host on cloud platform
 ### Frontend
 - [x] Wireframe
 - [x] Prototype
-- [ ] Connect to API
+- [x] Connect to API
 
 # Wireframe
 ![image](https://github.com/Xuewei-Chen/Plant-Nanny/blob/main/Wireframe/Plant%20Nanny%20-%20Google%20Pixel%205%20-%201.png)

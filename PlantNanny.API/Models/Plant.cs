@@ -1,5 +1,8 @@
-﻿namespace PlantNanny.API.Models
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace PlantNanny.API.Models
 {
+    [BindProperties]
     public class Plant
     {
         public int Id { get; set; }

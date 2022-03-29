@@ -3,7 +3,7 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   tools:context=".SignUpActivity">
+                                                   tools:context=".AddPlantActivity">
 
     <!--使用线性布局-->
     <LinearLayout
@@ -16,7 +16,7 @@
         <ImageView
                 android:id="@+id/RepoImage"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/today"/>
@@ -27,17 +27,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+            <LinearLayout
+                    android:id="@+id/PlantSearchLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <!--search-->
+                <EditText
+                        android:id="@+id/PlantSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/translucent_edit"
+                        android:hint="Search"
+                        android:inputType="text"
+                        android:textSize="24dp"
+                        android:singleLine="true" />
+
+            </LinearLayout>
 
             <!--嵌套线性布局-->
             <LinearLayout
-                    android:id="@+id/IntroLayout"
+                    android:id="@+id/DynamicLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="279dp"
                     android:orientation="horizontal">
 
-                <!--watering freq-->
-                <EditText
-                        android:id="@+id/Region"
+                <ListView
+                        android:id="@+id/lv_plantReports"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="15dp"
@@ -46,49 +67,8 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/translucent_edit"
-                        android:textSize="24sp"
-                        android:singleLine="true" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                    android:id="@+id/WaterLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                <EditText
-                        android:id="@+id/Water"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="15dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/translucent_edit"
-                        android:textSize="24sp"
-                        android:singleLine="true" />
-            </LinearLayout>
-
-            <LinearLayout
-                    android:id="@+id/FertilizeLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                <EditText
-                        android:id="@+id/Fertilize"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="15dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/translucent_edit"
-                        android:textSize="24sp"
-                        android:singleLine="true" />
+                        android:textSize="24dp"
+                        android:singleLine="true"/>
             </LinearLayout>
 
         </LinearLayout>

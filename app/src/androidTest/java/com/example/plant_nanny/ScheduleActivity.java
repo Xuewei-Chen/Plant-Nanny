@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 
 public class ScheduleActivity extends Activity {
-    // 调用Actvity
+    // 调用Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +25,9 @@ public class ScheduleActivity extends Activity {
                 new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // 跳转到注册界面
-                        Intent intent = new Intent(ScheduleActivity.this, SignUpActivity.class);
-                        startActivity(intent);
+                        // convert to today
+                        Intent intent_today = new Intent(ScheduleActivity.this, TodayActivity.class);
+                        startActivity(intent_today);
                     }
                 }
         );
@@ -38,9 +36,9 @@ public class ScheduleActivity extends Activity {
                 new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // 跳转到注册界面
-                        Intent intent = new Intent(ScheduleActivity.this, AddPlantActivity.class);
-                        startActivity(intent);
+                        // convert to add plant
+                        Intent intent_add = new Intent(ScheduleActivity.this, AddPlantActivity.class);
+                        startActivity(intent_add);
                     }
                 }
         );
@@ -49,9 +47,9 @@ public class ScheduleActivity extends Activity {
                 new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // 跳转到注册界面
-                        Intent intent = new Intent(ScheduleActivity.this, SignUpActivity.class);
-                        startActivity(intent);
+                        // convert to repo
+                        Intent intent_repo = new Intent(ScheduleActivity.this, RepoActivity.class);
+                        startActivity(intent_repo);
                     }
                 }
         );
@@ -61,8 +59,8 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // 跳转到注册界面
-                        Intent intent = new Intent(ScheduleActivity.this, SignUpActivity.class);
-                        startActivity(intent);
+                        Intent intent_notes = new Intent(ScheduleActivity.this, SignUpActivity.class);
+                        startActivity(intent_notes);
                     }
                 }
         );

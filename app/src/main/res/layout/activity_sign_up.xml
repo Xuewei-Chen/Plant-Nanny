@@ -124,7 +124,6 @@
                         android:background="@drawable/translucent_edit"
                         android:hint="Email"
                         android:textSize="24dp"
-                        android:maxLength="16"
                         android:singleLine="true" />
 
             </LinearLayout>

@@ -3,12 +3,14 @@ package com.example.plant_nanny;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class SignUpActivity extends Activity {
+    DBHelper db_user;
     // 调用Actvity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class SignUpActivity extends Activity {
         Button signUpButton = (Button) this.findViewById(R.id.SignUpButton);
         Button backLoginButton = (Button) this.findViewById(R.id.BackLoginButton);
 
+        db_user = new DBHelper(this);
+
         // 立即注册按钮监听器
         signUpButton.setOnClickListener(
                 new View.OnClickListener() {
@@ -32,21 +36,33 @@ public class SignUpActivity extends Activity {
                         String strPassWord = passWord.getText().toString().trim();
                         String strPassWordAgain = passWordAgain.getText().toString().trim();
                         String strPhoneNumber = email.getText().toString().trim();
-                        //注册格式粗检
-                        if (strUserName.length() > 10) {
-                            Toast.makeText(SignUpActivity.this, "Password length must be less than 10！", Toast.LENGTH_SHORT).show();
-                        } else if (strUserName.length() < 4) {
-                            Toast.makeText(SignUpActivity.this, "Password length must be greater than 4！", Toast.LENGTH_SHORT).show();
-                        } else if (!strPassWord.equals(strPassWordAgain)) {
-                            Toast.makeText(SignUpActivity.this, "Inconsistent password entered twice！", Toast.LENGTH_SHORT).show();
-                        } else if (!strPhoneNumber.contains("@")) {
-                            Toast.makeText(SignUpActivity.this, "Invalid Email！", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(SignUpActivity.this, "Successful！", Toast.LENGTH_SHORT).show();
-                            // 跳转到登录界面
-                            Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
-                            startActivity(intent);
+
+                        //check if fields are empty or not, if it empty show Toast message Else checkUsername, if it is
+                        //false insert data else registration failed
+                        //if checkUsername true, Toast user Already exist
+                        if(TextUtils.isEmpty(strUserName) || TextUtils.isEmpty(strPassWord)){
+                            Toast.makeText(SignUpActivity.this,"All fields Required", Toast.LENGTH_SHORT).show();
+                        }else{
+                            if(strPassWord.equals(strPassWordAgain)){
+                                Boolean checkuser = db_user.checkUsername(strUserName);
+                                if(checkuser == false){
+                                    Boolean insert = db_user.insertData(strUserName, strPassWord);
+                                    if(insert == true){
+                                        Toast.makeText(SignUpActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(SignUpActivity.this, ScheduleActivity.class);
+                                        startActivity(intent);
+                                    }else {
+                                        Toast.makeText(SignUpActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                                    }
+                                }else {
+                                    Toast.makeText(SignUpActivity.this, "User already Exists", Toast.LENGTH_SHORT).show();
+                                }
+                            }else{
+                                Toast.makeText(SignUpActivity.this, "Password are not matching", Toast.LENGTH_SHORT).show();
+                            }
                         }
+
+
                     }
                 }
         );

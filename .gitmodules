@@ -1,0 +1,6 @@
+[submodule "Plant-Nanny"]
+	path = Plant-Nanny
+	url = https://github.com/Xuewei-Chen/Plant-Nanny
+[submodule "FrontendAndUserDB/Plant-Nanny"]
+	path = FrontendAndUserDB/Plant-Nanny
+	url = https://github.com/Xuewei-Chen/Plant-Nanny

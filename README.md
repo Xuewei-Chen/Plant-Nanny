@@ -22,7 +22,8 @@ Plant Story is a reminder app to take care of plants. You can search plant by na
 ![image](https://github.com/Xuewei-Chen/Plant-Nanny/blob/main/Wireframe/Plant%20Nanny%20-%20Google%20Pixel%205%20-%205.png)
 
 # Built with
-- Java
+- InteliJ Idea(Java)
+- Plant API
 - ASP.net core web API (C#)
 
 

@@ -25,7 +25,7 @@ Plant Story is a reminder app to take care of plants. You can search plant by na
 - Java
 - ASP.net core web API (C#)
 
-# Scrum master: Will Ramsey
+# Scrum master: 
 
 # Contributers
 - Sea-Shore-Sahil: https://github.com/Sea-Shore-Sahil

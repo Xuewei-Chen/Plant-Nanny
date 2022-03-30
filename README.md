@@ -1,5 +1,5 @@
 # Plant-Story
-Plant Story is a reminder app to take care of your plants. You can create sets of reminder for each plant you have. You can share your routine and also look for other user's routine.
+Plant Story is a reminder app to take care of plants. You can search plant by name, add them to your repository, create sets of reminder for each plant you have, share your routine with other users, also look for other user's routine.
 
 # TODO
 ### Backend

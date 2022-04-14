@@ -50,6 +50,7 @@ namespace PlantNanny.API.Controller
         /* HTTP Gets methods */
 
         [HttpGet]
+        //[Route("/")]    //New
         public async Task<IEnumerable<Plant>> GetPlants()
         {
             return await plantRepository.Get();

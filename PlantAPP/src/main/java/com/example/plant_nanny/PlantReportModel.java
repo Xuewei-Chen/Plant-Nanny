@@ -2,19 +2,40 @@ package com.example.plant_nanny;
 
 public class PlantReportModel {
 
-    private int id;
-    private String genus;
-    private String species;
-    private String cultivar;
-    private String common;
+    private int Id;
+    private string Name;
+    private string Sci_Name;
+    private string Region;
+    private int Water_Frequency;
+    private int Water_Amount;
+    private string Fertilizer;
+    private string Fert_Description;
+    private int Fert_Frequency;
+    private int Fert_Amount;
 
 
-    public PlantReportModel(int id, String genus, String species, String cultivar, String common) {
-        this.id = id;
-        this.genus = genus;
-        this.species = species;
-        this.cultivar = cultivar;
-        this.common = common;
+    public PlantReportModel(
+        int Id,
+        string Name,
+        string Sci_Name,
+        string Region,
+        int Water_Frequency,
+        int Water_Amount,
+        string Fertilizer,
+        string Fert_Description,
+        int Fert_Frequency,
+        int Fert_Amount)
+    {
+        this.Id = Id;
+        this.Name = Name;
+        this.Sci_Name = Sci_Name;
+        this.Region = Region;
+        this.Water_Frequency = Water_Frequency;
+        this.Water_Amount = Water_Amount;
+        this.Fertilizer = Fertilizer;
+        this.Fert_Description = Fert_Description;
+        this.Fert_Frequency = Fert_Frequency;
+        this.Fert_Amount = Fert_Amount;
     }
 
     public PlantReportModel() {

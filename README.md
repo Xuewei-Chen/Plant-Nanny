@@ -8,7 +8,7 @@ Plant Story is a reminder app to take care of plants. You can search plant by na
 - [ ] Add like counter
 - [x] Add user login and info
 - [x] Search function
-- [ ] Host on cloud platform
+- [x] Host on cloud platform
 ### Frontend
 - [x] Wireframe
 - [x] GUI

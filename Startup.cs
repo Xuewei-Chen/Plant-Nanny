@@ -33,10 +33,7 @@ namespace PlantNanny.API
         {
             services.AddScoped<IPlantRepository, PlantRepository>();
             //services.AddDbContext<PlantContext>(o => o.UseSqlite("Data source=plants.db"));   //Working locally
-            //services.AddDbContext<PlantContext>(o => o.UseSqlServer(
 
-            //    "Server=tcp:plantnanny4720-sahil.database.windows.net,1433;Initial Catalog=plantsuserDB;Persist Security Info=False;User ID=spatel7;Password=3K3qB2pKVKkA6eQ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
-            //    ));
             services.AddDbContext<PlantContext>(o => o.UseSqlServer(Configuration["plantusersDB"]));
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -1,14 +1,4 @@
-﻿/*
-namespace PlantNanny.API
-{
-    public class Startup
-    {
-    }
-}
-*/
-
-
-using PlantNanny.API.Models;
+﻿using PlantNanny.API.Models;
 using PlantNanny.API.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +19,7 @@ namespace PlantNanny.API
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -36,11 +27,14 @@ namespace PlantNanny.API
 
         public IConfiguration Configuration { get; }
 
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IPlantRepository, PlantRepository>();
-            services.AddDbContext<PlantContext>(o => o.UseSqlite("Data source=plants.db"));
+            //services.AddDbContext<PlantContext>(o => o.UseSqlite("Data source=plants.db"));   //Working locally
+
+            services.AddDbContext<PlantContext>(o => o.UseSqlServer(Configuration["plantusersDB"]));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -51,12 +45,9 @@ namespace PlantNanny.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PlantNannyAPI v1"));
-            }
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PlantNannyAPI v1"));
 
             app.UseHttpsRedirection();
 

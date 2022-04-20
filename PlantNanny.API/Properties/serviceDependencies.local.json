@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureKeyVault",
+      "type": "mssql.onprem",
+      "connectionId": "ConnectionStrings:PlantsUserDb"
+    }
+  }
+}

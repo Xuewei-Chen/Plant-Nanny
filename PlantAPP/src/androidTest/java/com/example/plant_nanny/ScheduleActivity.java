@@ -26,7 +26,7 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // convert to today
-                        Intent intent_today = new Intent(ScheduleActivity.this, TodayActivity.class);
+                        Intent intent_today = new Intent(ScheduleActivity.this, AddPlantActivity.class);
                         startActivity(intent_today);
                     }
                 }
@@ -37,7 +37,7 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // convert to add plant
-                        Intent intent_add = new Intent(ScheduleActivity.this, AddPlantActivity.class);
+                        Intent intent_add = new Intent(ScheduleActivity.this, SearchPlantActivity.class);
                         startActivity(intent_add);
                     }
                 }
@@ -48,7 +48,7 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // convert to repo
-                        Intent intent_repo = new Intent(ScheduleActivity.this, RepoActivity.class);
+                        Intent intent_repo = new Intent(ScheduleActivity.this, RemindActivity.class);
                         startActivity(intent_repo);
                     }
                 }

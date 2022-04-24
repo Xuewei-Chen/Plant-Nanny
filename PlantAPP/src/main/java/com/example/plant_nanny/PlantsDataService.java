@@ -70,8 +70,6 @@ public class PlantsDataService {
         });
 
         MySingleton.getInstance(context).addToRequestQueue(request);
-        //return a NULL. problem!
-        //return cityID;
     }
 
 }

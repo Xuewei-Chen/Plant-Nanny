@@ -9,18 +9,18 @@ import android.widget.*;
 
 import java.util.List;
 
-public class AddPlantActivity extends Activity {
+public class SearchPlantActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // 关联activity.xml
-        setContentView(R.layout.activity_customize_add_plant);
+        setContentView(R.layout.activity_add_plant);
 
         Button BackButton = (Button) this.findViewById(R.id.BackButton);
         ListView plantReports = (ListView) this.findViewById(R.id.lv_plantReports);
         EditText PlantSearch = (EditText) this.findViewById(R.id.PlantSearch) ;
 
-        PlantsDataService plantsDataService = new PlantsDataService(AddPlantActivity.this);
+        PlantsDataService plantsDataService = new PlantsDataService(SearchPlantActivity.this);
 
         PlantSearch.setOnClickListener(
                 new OnClickListener() {
@@ -30,14 +30,14 @@ public class AddPlantActivity extends Activity {
                         plantsDataService.getPlantInfoByName(PlantSearch.getText().toString(), new PlantsDataService.GetPlantInfoByNameResponse() {
                             @Override
                             public void onError(String message) {
-                                Toast.makeText(AddPlantActivity.this, "something wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SearchPlantActivity.this, "something wrong", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onResponse(List<PlantReportModel> plantReportModels) {
                                 //put the entire list into the listview control
 
-                                ArrayAdapter arrayAdapter = new ArrayAdapter(AddPlantActivity.this, android.R.layout.simple_list_item_1, plantReportModels);
+                                ArrayAdapter arrayAdapter = new ArrayAdapter(SearchPlantActivity.this, android.R.layout.simple_list_item_1, plantReportModels);
                                 plantReports.setAdapter(arrayAdapter);
                             }
                         });
@@ -50,7 +50,7 @@ public class AddPlantActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // convert to schedule page
-                        Intent intent = new Intent(AddPlantActivity.this, ScheduleActivity.class);
+                        Intent intent = new Intent(SearchPlantActivity.this, ScheduleActivity.class);
                         startActivity(intent);
                     }
                 }

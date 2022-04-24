@@ -3,7 +3,7 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   tools:context=".NotesActivity">
+                                                   tools:context=".SearchPlantActivity">
 
     <!--使用线性布局-->
     <LinearLayout
@@ -16,7 +16,7 @@
         <ImageView
                 android:id="@+id/RepoImage"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/today"/>
@@ -27,40 +27,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-            <!--嵌套线性布局-->
             <LinearLayout
-                    android:id="@+id/TodayLayout"
+                    android:id="@+id/PlantSearchLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent">
 
-                <!--watering freq-->
+                <!--search-->
                 <EditText
-                        android:id="@+id/Watering_Freq_Edit"
+                        android:id="@+id/CusPlantSearch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="15dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="15dp"
                         android:background="@drawable/translucent_edit"
-                        android:textSize="24sp"
+                        android:hint="Search"
+                        android:inputType="text"
+                        android:textSize="24dp"
                         android:singleLine="true" />
 
             </LinearLayout>
 
+            <!--嵌套线性布局-->
             <LinearLayout
-                    android:id="@+id/ScheduleLayout"
+                    android:id="@+id/DynamicLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="279dp"
                     android:orientation="horizontal">
 
-                <!--Schedule input-->
-                <!--fertilizing freq-->
-                <EditText
-                        android:id="@+id/Fertilize_Freq_Edit"
+                <ListView
+                        android:id="@+id/lv_customizeReports"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="15dp"
@@ -69,8 +67,8 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/translucent_edit"
-                        android:textSize="24sp"
-                        android:singleLine="true" />
+                        android:textSize="24dp"
+                        android:singleLine="true"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -81,10 +79,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-
             <!--Return Button-->
             <Button
-                    android:id="@+id/BackAccountButton"
+                    android:id="@+id/BackBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="15dp"

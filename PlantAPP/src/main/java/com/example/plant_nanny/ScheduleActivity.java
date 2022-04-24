@@ -6,17 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class ScheduleActivity extends Activity {
@@ -37,7 +26,7 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // convert to today
-                        Intent intent_today = new Intent(ScheduleActivity.this, TodayActivity.class);
+                        Intent intent_today = new Intent(ScheduleActivity.this, AddPlantActivity.class);
                         startActivity(intent_today);
                     }
                 }
@@ -48,7 +37,7 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // convert to add plant
-                        Intent intent_add = new Intent(ScheduleActivity.this, AddPlantActivity.class);
+                        Intent intent_add = new Intent(ScheduleActivity.this, SearchPlantActivity.class);
                         startActivity(intent_add);
                     }
                 }
@@ -60,7 +49,7 @@ public class ScheduleActivity extends Activity {
                     public void onClick(View v) {
 
                         // convert to repo
-                        Intent intent_repo = new Intent(ScheduleActivity.this, RepoActivity.class);
+                        Intent intent_repo = new Intent(ScheduleActivity.this, RemindActivity.class);
                         startActivity(intent_repo);
                     }
                 }
@@ -71,7 +60,7 @@ public class ScheduleActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         // 跳转到注册界面
-                        Intent intent_notes = new Intent(ScheduleActivity.this, SignUpActivity.class);
+                        Intent intent_notes = new Intent(ScheduleActivity.this, MainActivity.class);
                         startActivity(intent_notes);
                     }
                 }

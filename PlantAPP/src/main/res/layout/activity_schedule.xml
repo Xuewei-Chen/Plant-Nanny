@@ -72,7 +72,7 @@
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/translucent_button"
-                        android:hint="Add Plant"
+                        android:hint="Search Plants"
                         android:textSize="24dp"
                         android:singleLine="true"/>
 
@@ -97,7 +97,7 @@
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/white"
                         android:background="@drawable/translucent_button"
-                        android:hint="Repo"
+                        android:hint="Reminders"
                         android:textSize="24dp"
                         android:singleLine="true"/>
 
@@ -121,9 +121,9 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/translucent_button"
                         android:textColor="@color/white"
-                        android:hint="Notes"
+                        android:hint="Return"
                         android:textSize="24dp"
-                        android:singleLine="true" />
+                        android:singleLine="true"/>
 
             </LinearLayout>
 

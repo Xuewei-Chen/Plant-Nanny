@@ -19,9 +19,10 @@
         </activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ScheduleActivity" />
+        <activity android:name=".SearchPlantActivity" />
+        <activity android:name=".RemindActivity" />
         <activity android:name=".AddPlantActivity" />
-        <activity android:name=".RepoActivity" />
-        <activity android:name=".TodayActivity" />
+        <receiver android:name=".AlarmReceiver"/>
     </application>
 
 </manifest>

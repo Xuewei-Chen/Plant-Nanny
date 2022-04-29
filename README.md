@@ -27,6 +27,16 @@ Plant Story is a reminder app to take care of plants. You can search plant by na
 - Plant API
 - ASP.net core web API (C#)
 
+#Intstructions
+1. Create an android phone project
+File->new project->...->Finish
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/92342522/166060420-cf3589a8-af9b-4605-833a-dd900f8b5683.png">
+Configuration
+Minimum SDK API 21: Android 5.0(Lollipop)
+
+2.Replace the documents src with this src and build.gradle file in this project, and build it.
+
+Then you can run this app in IntelliJ IDEA
 
 # Contributers
 - Sea-Shore-Sahil: https://github.com/Sea-Shore-Sahil
